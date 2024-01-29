@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelFeedback: UILabel!
     
     
+    
     @IBAction func btnAdd(_ sender: Any) {
         
         displayBox.text = "Full Name : \(firstName.text!) \(lastName.text!) \nCountry : \(country.text!)\nAge : \(age.text!)"
@@ -48,6 +49,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        displayBox.isUserInteractionEnabled = false;
     }
 
 }
